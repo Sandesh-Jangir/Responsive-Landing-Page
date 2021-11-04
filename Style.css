@@ -7,7 +7,7 @@
 }
 main{
     color: white;
-    background-image: url('/Static/abstract_low_poly_technology_banner_design_2507.jpg');
+    background-image: url('Static/abstract_low_poly_technology_banner_design_2507.jpg');
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 100vh;
