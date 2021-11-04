@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    color: white;
+    background-image: url('/Static/abstract_low_poly_technology_banner_design_2507.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow-x: hidden;
+    --primary-color:rgb(36, 196, 198); 
+    --secondry-color: rgb(59, 59, 59);
+}
+main h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+main h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 10px;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 30px;
+}
+.navbar ul li{
+    list-style: none;
+    margin:10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.navbar ul li a:hover, .active
+{
+    background: rgba(36, 195, 198, 0.74);
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+#logo{
+    font-size: 25px;
+    font-weight: 500;
+}
+.navbar button{
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    font-size: 15px;
+    background: var(--secondry-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+.advantages{
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+}
+.feature{
+    display: flex;
+    margin: 20px;
+}
+.content{
+    background-color: var(--secondry-color);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: justify;
+    cursor: pointer;
+}
+.content h2{
+    font-size: 4rem;
+    font-weight: 100 !important;
+    cursor: pointer;
+    border-bottom: 2px solid var(--primary-color);
+    transition: 0.5s ease;
+
+}
+.feature img{
+    width: 25vw;
+    border: 2px solid var(--secondry-color);
+    padding: 20px;
+}
+.part2{
+    max-height: 0;
+    overflow: hidden;
+}
+.feature:hover .part2, .part2:hover{
+    max-height: 200px;
+    transition: 0.5s ease;
+}
+
+.feature:hover .part1 h2{
+    font-size: 3rem;
+
+}
+footer{
+    height: 10vh;
+    background: var(--primary-color);
+    color: var(--secondry-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Making it Rsponsive */
+@media(max-width:810px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    main h1{
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+    main h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature img{
+        width: 58vw;
+        margin: auto;
+    }
+    .content{
+        min-width: 58vw;
+    }
+    .content h2{
+        font-size: 2rem;
+    }
+    footer{
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
